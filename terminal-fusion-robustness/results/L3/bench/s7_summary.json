@@ -1,0 +1,475 @@
+{
+ "seed": 7,
+ "quick": false,
+ "calib": "runs/L3A/calib_L3A.json",
+ "profile": "port_terminal",
+ "A": {
+  "summary": {
+   "EARLY": {
+    "macro_p_le": 0.6992299484833249,
+    "macro_ci": [
+     0.6841347035003269,
+     0.7150610102923639
+    ],
+    "worst_pattern": "thermal",
+    "worst_p_le": 0.007242702976750923,
+    "full_p_le": 0.9780107526881721,
+    "by_k": {
+     "1": 0.43963682838499185,
+     "2": 0.7096850084688343,
+     "3": 0.8734452775521817,
+     "4": 0.9780107526881721
+    }
+   },
+   "LATE": {
+    "macro_p_le": 0.6742832941177842,
+    "macro_ci": [
+     0.6580114374626463,
+     0.6908336835296555
+    ],
+    "worst_pattern": "thermal",
+    "worst_p_le": 0.007242702976750923,
+    "full_p_le": 0.9720967741935483,
+    "by_k": {
+     "1": 0.43963682838499185,
+     "2": 0.6699308120626442,
+     "3": 0.8410051129143459,
+     "4": 0.9720967741935483
+    }
+   },
+   "LEARN_noDrop": {
+    "macro_p_le": 0.5990924724561968,
+    "macro_ci": [
+     0.5805259633585813,
+     0.6210433734510864
+    ],
+    "worst_pattern": "thermal",
+    "worst_p_le": 0.0019555298037227495,
+    "full_p_le": 0.9864247311827957,
+    "by_k": {
+     "1": 0.30355389504466856,
+     "2": 0.5812554226301871,
+     "3": 0.8245535599250893,
+     "4": 0.9864247311827957
+    }
+   },
+   "LEARN_ModDrop": {
+    "macro_p_le": 0.8267033824452578,
+    "macro_ci": [
+     0.8054542873049291,
+     0.8418180489696132
+    ],
+    "worst_pattern": "thermal",
+    "worst_p_le": 0.1325414644745419,
+    "full_p_le": 0.9872043010752688,
+    "by_k": {
+     "1": 0.6271284079066047,
+     "2": 0.8491537478401517,
+     "3": 0.9524775792340675,
+     "4": 0.9872043010752688
+    }
+   }
+  },
+  "paired_tests": {
+   "LEARN_ModDrop vs EARLY": {
+    "mean_diff": 0.10394356063400689,
+    "wilcoxon_p": 3.62396240234375e-05,
+    "n_episodes": 20
+   },
+   "LEARN_ModDrop vs LEARN_noDrop": {
+    "mean_diff": 0.20253479619799925,
+    "wilcoxon_p": 1.9073486328125e-06,
+    "n_episodes": 20
+   },
+   "LATE vs EARLY": {
+    "mean_diff": -0.024801547730543456,
+    "wilcoxon_p": 2.6702880859375e-05,
+    "n_episodes": 20
+   }
+  },
+  "n_train_samples": {
+   "noDrop": 55800,
+   "ModDrop": 236584
+  },
+  "train_seconds": 13.6,
+  "n_test_series": 80,
+  "n_train_series": 120,
+  "config": {
+   "n_train_episodes": 30,
+   "n_test_episodes": 20,
+   "T": 50.0
+  }
+ },
+ "C_coverage": {
+  "N1": {
+   "ge1": 0.442156862745098,
+   "ge2": 0.0,
+   "n_points": 7140
+  },
+  "N2": {
+   "ge1": 0.496218487394958,
+   "ge2": 0.257843137254902,
+   "n_points": 7140
+  },
+  "N3": {
+   "ge1": 0.65406162464986,
+   "ge2": 0.09943977591036414,
+   "n_points": 7140
+  }
+ },
+ "C_sync": [
+  {
+   "clock": "perfect",
+   "offset_range_ms": 0.0,
+   "drift_ppm": 0.0,
+   "p_le": 0.9678763440860215,
+   "rmse": 0.207820845934412,
+   "p95": 0.41131683839009553
+  },
+  {
+   "clock": "ptp",
+   "offset_range_ms": 0.1,
+   "drift_ppm": 1.0,
+   "p_le": 0.9678763440860215,
+   "rmse": 0.20782274124667344,
+   "p95": 0.4113841270777676
+  },
+  {
+   "clock": "ntp",
+   "offset_range_ms": 5.0,
+   "drift_ppm": 5.0,
+   "p_le": 0.9643817204301075,
+   "rmse": 0.21201085186550517,
+   "p95": 0.4316819598446347
+  },
+  {
+   "clock": "none",
+   "offset_range_ms": 80.0,
+   "drift_ppm": 50.0,
+   "p_le": 0.9627016129032258,
+   "rmse": 0.2391917784295577,
+   "p95": 0.4529292390112743
+  }
+ ],
+ "C_uwb": [
+  {
+   "anchors": 4,
+   "frac_ge3_los": 0.7639412997903564,
+   "frac_gdop_le2": 0.7563941299790357,
+   "median_gdop": 1.193723190652563,
+   "frac_any_nlos": 0.7132075471698113
+  },
+  {
+   "anchors": 6,
+   "frac_ge3_los": 0.9769392033542977,
+   "frac_gdop_le2": 0.9706498951781971,
+   "median_gdop": 0.9472541521747835,
+   "frac_any_nlos": 0.8071278825995807
+  },
+  {
+   "anchors": 8,
+   "frac_ge3_los": 0.9945492662473795,
+   "frac_gdop_le2": 0.9932914046121594,
+   "median_gdop": 0.8292762954019307,
+   "frac_any_nlos": 0.8989517819706498
+  }
+ ],
+ "P": {
+  "N1": {
+   "pairs": {
+    "vehicle-worker/EARLY": {
+     "macro_p_rel_le": 0.7964899228129275,
+     "macro_overest_closing": 0.13121959086817894,
+     "macro_miss_alert": 0.5926218708827405,
+     "full_p_rel_le": 0.957751791776688,
+     "full_miss_alert": 0.48221343873517786
+    },
+    "vehicle-worker/LATE": {
+     "macro_p_rel_le": 0.784340795480115,
+     "macro_overest_closing": 0.1409279120508483,
+     "macro_miss_alert": 0.5944664031620553,
+     "full_p_rel_le": 0.9260656356092041,
+     "full_miss_alert": 0.49407114624505927
+    },
+    "vehicle-worker/LEARN_noDrop": {
+     "macro_p_rel_le": 0.7267514055631851,
+     "macro_overest_closing": 0.22963343880246884,
+     "macro_miss_alert": 0.6450592885375495,
+     "full_p_rel_le": 0.9701999245567711,
+     "full_miss_alert": 0.44664031620553357
+    },
+    "vehicle-worker/LEARN_ModDrop": {
+     "macro_p_rel_le": 0.8191139786409509,
+     "macro_overest_closing": 0.12156364799035453,
+     "macro_miss_alert": 0.5683794466403163,
+     "full_p_rel_le": 0.9603923047906451,
+     "full_miss_alert": 0.45454545454545453
+    },
+    "vehicle-vehicle/EARLY": {
+     "macro_p_rel_le": 0.830165094746348,
+     "macro_overest_closing": 0.10431128324712884,
+     "macro_miss_alert": 0.44444444444444453,
+     "full_p_rel_le": 0.979568234387047,
+     "full_miss_alert": 0.11934156378600823
+    },
+    "vehicle-vehicle/LATE": {
+     "macro_p_rel_le": 0.8329151871622916,
+     "macro_overest_closing": 0.10847859305760651,
+     "macro_miss_alert": 0.44526748971193414,
+     "full_p_rel_le": 0.9814957594448728,
+     "full_miss_alert": 0.11522633744855967
+    },
+    "vehicle-vehicle/LEARN_noDrop": {
+     "macro_p_rel_le": 0.7594151953144741,
+     "macro_overest_closing": 0.2039689367596854,
+     "macro_miss_alert": 0.45898491083676274,
+     "full_p_rel_le": 0.9915188897455667,
+     "full_miss_alert": 0.11934156378600823
+    },
+    "vehicle-vehicle/LEARN_ModDrop": {
+     "macro_p_rel_le": 0.8408237445828476,
+     "macro_overest_closing": 0.10279453458965064,
+     "macro_miss_alert": 0.4491083676268861,
+     "full_p_rel_le": 0.9853508095605242,
+     "full_miss_alert": 0.11522633744855967
+    }
+   },
+   "class_macro_p_le": {
+    "tractor/EARLY": 0.592626045400239,
+    "tractor/LATE": 0.5848721624850658,
+    "tractor/LEARN_noDrop": 0.5741577060931901,
+    "tractor/LEARN_ModDrop": 0.6169796893667862,
+    "forklift/EARLY": 0.5485591397849462,
+    "forklift/LATE": 0.5449534050179212,
+    "forklift/LEARN_noDrop": 0.5429677419354839,
+    "forklift/LEARN_ModDrop": 0.5594767025089606,
+    "amr/EARLY": 0.19403584229390677,
+    "amr/LATE": 0.1746093189964158,
+    "amr/LEARN_noDrop": 0.21638709677419357,
+    "amr/LEARN_ModDrop": 0.23783512544802868,
+    "worker/EARLY": 0.4904277180406213,
+    "worker/LATE": 0.4904133811230585,
+    "worker/LEARN_noDrop": 0.3697347670250896,
+    "worker/LEARN_ModDrop": 0.4633405017921148
+   },
+   "latency": [
+    {
+     "pair_type": "vehicle-vehicle",
+     "fusion": "naive",
+     "n": 1310,
+     "mean_err": 2.479429325825097,
+     "overest_rate": 0.2961832061068702,
+     "tau_eff_ms": 465.9415553487876
+    },
+    {
+     "pair_type": "vehicle-vehicle",
+     "fusion": "ts_aware",
+     "n": 1310,
+     "mean_err": 2.179613516677813,
+     "overest_rate": 0.150381679389313,
+     "tau_eff_ms": 372.3704493187968
+    },
+    {
+     "pair_type": "vehicle-worker",
+     "fusion": "naive",
+     "n": 1526,
+     "mean_err": 1.2012478206136905,
+     "overest_rate": 0.2981651376146789,
+     "tau_eff_ms": 740.9445555079848
+    },
+    {
+     "pair_type": "vehicle-worker",
+     "fusion": "ts_aware",
+     "n": 1526,
+     "mean_err": 1.1133799274421408,
+     "overest_rate": 0.17758846657929228,
+     "tau_eff_ms": 693.7426641916865
+    }
+   ],
+   "pair_budget": [
+    {
+     "pair": "tractor-worker",
+     "closing_speed": 8.1,
+     "band_R_m": 81.0,
+     "tau_max_ms": 61.7283950617284
+    },
+    {
+     "pair": "forklift-worker",
+     "closing_speed": 5.4,
+     "band_R_m": 54.0,
+     "tau_max_ms": 92.59259259259258
+    },
+    {
+     "pair": "amr-worker",
+     "closing_speed": 8.1,
+     "band_R_m": 81.0,
+     "tau_max_ms": 61.7283950617284
+    },
+    {
+     "pair": "tractor-forklift",
+     "closing_speed": 11.100000000000001,
+     "band_R_m": 111.00000000000001,
+     "tau_max_ms": 45.045045045045036
+    },
+    {
+     "pair": "tractor-tractor",
+     "closing_speed": 13.8,
+     "band_R_m": 138.0,
+     "tau_max_ms": 36.231884057971016
+    }
+   ],
+   "n_test_series": 160,
+   "close_m": 10.0,
+   "alert_m": 3.0
+  },
+  "N2": {
+   "pairs": {
+    "vehicle-worker/EARLY": {
+     "macro_p_rel_le": 0.8149290070461477,
+     "macro_overest_closing": 0.14438821384491798,
+     "macro_miss_alert": 0.6524374176548089,
+     "full_p_rel_le": 0.9574175824175825,
+     "full_miss_alert": 0.5928853754940712
+    },
+    "vehicle-worker/LATE": {
+     "macro_p_rel_le": 0.8064835186981004,
+     "macro_overest_closing": 0.150047300039395,
+     "macro_miss_alert": 0.6569169960474307,
+     "full_p_rel_le": 0.9378434065934066,
+     "full_miss_alert": 0.6007905138339921
+    },
+    "vehicle-worker/LEARN_noDrop": {
+     "macro_p_rel_le": 0.7376594013380443,
+     "macro_overest_closing": 0.22944045903298632,
+     "macro_miss_alert": 0.675098814229249,
+     "full_p_rel_le": 0.979739010989011,
+     "full_miss_alert": 0.5652173913043478
+    },
+    "vehicle-worker/LEARN_ModDrop": {
+     "macro_p_rel_le": 0.80866870621335,
+     "macro_overest_closing": 0.14074899026996449,
+     "macro_miss_alert": 0.6392621870882741,
+     "full_p_rel_le": 0.9773351648351648,
+     "full_miss_alert": 0.5573122529644269
+    },
+    "vehicle-vehicle/EARLY": {
+     "macro_p_rel_le": 0.7937415790304528,
+     "macro_overest_closing": 0.13281351222773413,
+     "macro_miss_alert": 0.47517146776406044,
+     "full_p_rel_le": 0.9692532942898975,
+     "full_miss_alert": 0.1728395061728395
+    },
+    "vehicle-vehicle/LATE": {
+     "macro_p_rel_le": 0.7849827957685942,
+     "macro_overest_closing": 0.13612824092726167,
+     "macro_miss_alert": 0.4773662551440329,
+     "full_p_rel_le": 0.962298682284041,
+     "full_miss_alert": 0.16872427983539096
+    },
+    "vehicle-vehicle/LEARN_noDrop": {
+     "macro_p_rel_le": 0.6971129687999532,
+     "macro_overest_closing": 0.24866918355459672,
+     "macro_miss_alert": 0.4927297668038408,
+     "full_p_rel_le": 0.9652269399707174,
+     "full_miss_alert": 0.18106995884773663
+    },
+    "vehicle-vehicle/LEARN_ModDrop": {
+     "macro_p_rel_le": 0.7987803442382383,
+     "macro_overest_closing": 0.1413298871410556,
+     "macro_miss_alert": 0.4737997256515775,
+     "full_p_rel_le": 0.968887262079063,
+     "full_miss_alert": 0.1646090534979424
+    }
+   },
+   "class_macro_p_le": {
+    "tractor/EARLY": 0.6128506571087216,
+    "tractor/LATE": 0.6028434886499402,
+    "tractor/LEARN_noDrop": 0.5906284348864994,
+    "tractor/LEARN_ModDrop": 0.6341170848267622,
+    "forklift/EARLY": 0.5751971326164875,
+    "forklift/LATE": 0.5684874551971326,
+    "forklift/LEARN_noDrop": 0.5691469534050179,
+    "forklift/LEARN_ModDrop": 0.6062939068100358,
+    "amr/EARLY": 0.24156272401433695,
+    "amr/LATE": 0.21863799283154117,
+    "amr/LEARN_noDrop": 0.2420645161290322,
+    "amr/LEARN_ModDrop": 0.27648745519713264,
+    "worker/EARLY": 0.5630919952210274,
+    "worker/LATE": 0.5627383512544804,
+    "worker/LEARN_noDrop": 0.4728793309438471,
+    "worker/LEARN_ModDrop": 0.5185041816009558
+   },
+   "latency": [
+    {
+     "pair_type": "vehicle-vehicle",
+     "fusion": "naive",
+     "n": 1346,
+     "mean_err": 1.368974216254957,
+     "overest_rate": 0.28454680534918275,
+     "tau_eff_ms": 355.68738061328196
+    },
+    {
+     "pair_type": "vehicle-vehicle",
+     "fusion": "ts_aware",
+     "n": 1346,
+     "mean_err": 1.0754154739179953,
+     "overest_rate": 0.1151560178306092,
+     "tau_eff_ms": 246.9154295737292
+    },
+    {
+     "pair_type": "vehicle-worker",
+     "fusion": "naive",
+     "n": 1848,
+     "mean_err": 2.75360319027326,
+     "overest_rate": 0.2846320346320346,
+     "tau_eff_ms": 781.93585353277
+    },
+    {
+     "pair_type": "vehicle-worker",
+     "fusion": "ts_aware",
+     "n": 1848,
+     "mean_err": 2.141561706364656,
+     "overest_rate": 0.1791125541125541,
+     "tau_eff_ms": 563.0458565332817
+    }
+   ],
+   "pair_budget": [
+    {
+     "pair": "tractor-worker",
+     "closing_speed": 8.1,
+     "band_R_m": 81.0,
+     "tau_max_ms": 61.7283950617284
+    },
+    {
+     "pair": "forklift-worker",
+     "closing_speed": 5.4,
+     "band_R_m": 54.0,
+     "tau_max_ms": 92.59259259259258
+    },
+    {
+     "pair": "amr-worker",
+     "closing_speed": 8.1,
+     "band_R_m": 81.0,
+     "tau_max_ms": 61.7283950617284
+    },
+    {
+     "pair": "tractor-forklift",
+     "closing_speed": 11.100000000000001,
+     "band_R_m": 111.00000000000001,
+     "tau_max_ms": 45.045045045045036
+    },
+    {
+     "pair": "tractor-tractor",
+     "closing_speed": 13.8,
+     "band_R_m": 138.0,
+     "tau_max_ms": 36.231884057971016
+    }
+   ],
+   "n_test_series": 160,
+   "close_m": 10.0,
+   "alert_m": 3.0
+  }
+ },
+ "runtime_s_last": 101.7,
+ "note": "Conceptual benchmark; parameters are assumptions (see nf_sim.py)."
+}

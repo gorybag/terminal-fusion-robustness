@@ -1,0 +1,10 @@
+# core (paper 1 simulation, figures, AI Hub port processing)
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+tabulate
+# AI Hub detect step (OpenCV Darknet backend for the dataset's YOLOv4) and OpenAlex trend script
+opencv-python>=4.8,<5
+requests

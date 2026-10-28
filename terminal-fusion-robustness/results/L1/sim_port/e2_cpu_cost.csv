@@ -1,0 +1,6 @@
+strategy,cpu_us_per_meas_mean,cpu_us_per_meas_p95
+S0_lidar_only,0.844922,1.00209
+S1_naive,0.434747,0.500151
+S2_ts_aware,0.836363,0.960254
+S3_ts_qt_robust,0.868797,1.00312
+S4_ts_qt_hm,0.965039,1.11098

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+paths.env
+data/
+runs/
+*.weights
+*.pt
+*.onnx
+*.zip
+*.log
+# raw or per-image derived data from licensed datasets must not be committed
+**/port_labels.csv
+**/port_dets*.csv

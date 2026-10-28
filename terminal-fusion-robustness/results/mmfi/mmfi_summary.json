@@ -1,0 +1,87 @@
+{
+ "eps_main": 0.1,
+ "per_modality_rms_m": {
+  "lidar": 0.146,
+  "mmwave": 0.152,
+  "rgb": 0.127,
+  "wifi": 0.197
+ },
+ "availability": {
+  "lidar": 1.0,
+  "mmwave": 0.9903057419835943,
+  "rgb": 1.0,
+  "wifi": 1.0
+ },
+ "macro": {
+  "LEARN_ModDrop": 0.5692,
+  "EARLY": 0.5304,
+  "LATE": 0.5299,
+  "LEARN_noDrop": 0.4725,
+  "PRIOR": 0.2882
+ },
+ "ranking_mmfi": [
+  "LEARN_ModDrop",
+  "EARLY",
+  "LATE",
+  "LEARN_noDrop"
+ ],
+ "ranking_simulation": [
+  "LEARN_ModDrop",
+  "EARLY",
+  "LATE",
+  "LEARN_noDrop"
+ ],
+ "kendall_tau_vs_simulation": 1.0,
+ "dependency": {
+  "LEARN_ModDrop": {
+   "lidar": -0.002,
+   "mmwave": 0.113,
+   "rgb": 0.111,
+   "wifi": -0.084
+  },
+  "EARLY": {
+   "lidar": -0.013,
+   "mmwave": 0.008,
+   "rgb": 0.166,
+   "wifi": -0.054
+  },
+  "LATE": {
+   "lidar": -0.01,
+   "mmwave": 0.002,
+   "rgb": 0.167,
+   "wifi": -0.054
+  },
+  "LEARN_noDrop": {
+   "lidar": -0.025,
+   "mmwave": 0.194,
+   "rgb": 0.326,
+   "wifi": -0.033
+  }
+ },
+ "by_k": {
+  "EARLY": {
+   "1": 0.4373,
+   "2": 0.5433,
+   "3": 0.5842,
+   "4": 0.6109
+  },
+  "LATE": {
+   "1": 0.441,
+   "2": 0.5419,
+   "3": 0.5813,
+   "4": 0.6077
+  },
+  "LEARN_ModDrop": {
+   "1": 0.4457,
+   "2": 0.5714,
+   "3": 0.6584,
+   "4": 0.6929
+  },
+  "LEARN_noDrop": {
+   "1": 0.3054,
+   "2": 0.4794,
+   "3": 0.5748,
+   "4": 0.6903
+  }
+ }
+}

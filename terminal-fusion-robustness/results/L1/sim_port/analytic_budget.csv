@@ -1,0 +1,5 @@
+agent,v_max,band_R_m,tau_max_ms_for_0p5m,bias_at_50ms_m
+yard_tractor,6.9,69,72.4638,0.345
+forklift,4.2,42,119.048,0.21
+amr,6.9,69,72.4638,0.345
+pedestrian,1.2,12,416.667,0.06

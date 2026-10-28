@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "terminal-fusion-robustness: code for latency- and dropout-robust infrastructure multi-sensor localization"
+authors:
+  - family-names: "[Family name]"
+    given-names: "[Given name]"
+    affiliation: "[Affiliation]"
+version: "1.0.0"
+date-released: "2026-11-01"
+license: MIT
+repository-code: "https://github.com/[account]/terminal-fusion-robustness"
+preferred-citation:
+  type: article
+  title: "Latency- and Dropout-Robust Infrastructure Multi-Sensor Localization for Collision Prevention in Container Terminals"
+  authors:
+    - family-names: "[Family name]"
+      given-names: "[Given name]"
+  journal: "Asia-pacific Journal of Convergent Research Interchange"
+  year: 2026
+  doi: "[paper DOI]"
