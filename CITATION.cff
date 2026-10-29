@@ -6,6 +6,7 @@ authors:
     given-names: "[Given name]"
     affiliation: "[Affiliation]"
 version: "1.0.0"
+doi: 10.5281/zenodo.23772687
 date-released: "2026-11-01"
 license: MIT
 repository-code: "https://github.com/[account]/terminal-fusion-robustness"

@@ -1,5 +1,7 @@
 # Latency- and Dropout-Robust Infrastructure Multi-Sensor Localization for Collision Prevention in Container Terminals
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23772687.svg)](https://doi.org/10.5281/zenodo.23772687)
+
 Code, scenario settings, calibration files and seeds for the paper of the same title
 (Asia-pacific Journal of Convergent Research Interchange, [volume/issue, year], DOI: [paper DOI]).
 
