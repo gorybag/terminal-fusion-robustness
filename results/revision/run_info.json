@@ -1,5 +1,5 @@
 {
-  "part": "scale_nodes",
+  "part": "examples",
   "out": "results/revision",
   "seeds": "7,11,23,31,47",
   "sens_seeds": "7,11,23",
@@ -11,5 +11,5 @@
   "profile": "port_terminal",
   "calib": "calibration/calib_L3.json",
   "quick": false,
-  "started": "2026-11-09 20:24"
+  "started": "2026-11-09 21:17"
 }
