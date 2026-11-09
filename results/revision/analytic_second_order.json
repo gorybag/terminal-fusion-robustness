@@ -1,0 +1,8 @@
+{
+  "first_order_m": 0.49679999999999996,
+  "accel_term_m_at_1mps2": 0.0025919999999999997,
+  "accel_term_m_at_3mps2": 0.007775999999999999,
+  "turn_term_m_yaw_0p6": 0.010730879999999998,
+  "stopping_distance_m_25kmh": 26.2,
+  "note": "v=6.9 m/s, tau=72 ms; turn term = 0.5*v*omega*tau^2; stopping: 1.5 s reaction, 1.5 m/s^2"
+}

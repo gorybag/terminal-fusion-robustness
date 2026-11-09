@@ -12,3 +12,4 @@ Filled by `tools/collect_results.py` from a local run (see that script). Folder 
 | `mmfi/` | Table 7, Fig. 7b |
 | `figures/` | Final figures of the paper |
 | `MANIFEST.csv` | Source path, size and SHA-256 of every copied file |
+| `revision/` | Revision analyses (robust baselines, sensitivity, dropout sweep, CIs, density and node layouts, failure examples); see `docs/REVISION.md` |

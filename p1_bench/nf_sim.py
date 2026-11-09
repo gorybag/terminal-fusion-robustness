@@ -74,6 +74,8 @@ CONDITIONS = {
     "fog":     dict(lidar=dict(da=-2.0, smul=2.0, rmax=35.0, ghost=0.05), camera=dict(da=-1.5, smul=1.4),
                     thermal=dict(da=-0.7, smul=1.2)),
 }
+GNSS_FLOAT_P = 0.5    # probability of RTK float within 6 m of steel stacks (assumed; varied in revision_experiments.py)
+GNSS_JUMP_P = 0.05    # probability of a multipath jump within 6 m of stacks (assumed)
 CLOCKS = {  # per-sensor constant offset range (s) and drift range (ppm)
     "perfect": (0.0, 0.0), "ptp": (1e-4, 1.0), "ntp": (5e-3, 5.0), "none": (8e-2, 50.0),
 }
@@ -291,10 +293,10 @@ def sense(rng, agent, mod, node, layout, T, cond="nominal", clock="perfect", out
         dx = np.maximum(np.maximum(boxes[None, :, 0] - p[:, None, 0], 0), p[:, None, 0] - boxes[None, :, 2])
         dy = np.maximum(np.maximum(boxes[None, :, 1] - p[:, None, 1], 0), p[:, None, 1] - boxes[None, :, 3])
         near = np.hypot(dx, dy).min(axis=1) < 6.0
-        fl = near & (rng.random(len(tc)) < 0.5)
+        fl = near & (rng.random(len(tc)) < GNSS_FLOAT_P)
         z[fl] = p[fl] + rng.standard_normal((int(fl.sum()), 2)) * 0.5
         sig_rep = np.where(fl, 0.5, sig_rep)
-        jm = near & ~fl & (rng.random(len(tc)) < 0.05)
+        jm = near & ~fl & (rng.random(len(tc)) < GNSS_JUMP_P)
         ang = rng.uniform(0, 2 * math.pi, int(jm.sum()))
         z[jm] += np.c_[np.cos(ang), np.sin(ang)] * rng.uniform(1.5, 4.0, int(jm.sum()))[:, None]
     sig_rep = sig_rep * np.exp(rng.normal(0, 0.2, len(tc)))

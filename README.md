@@ -60,3 +60,10 @@ only aggregate statistics derived from them (calibration files, result tables) a
 ## Citation
 
 See `CITATION.cff`. Please cite the paper when using this code.
+
+## Revision analyses (v1.1.0)
+
+`p1_bench/revision_experiments.py` adds robust baselines (hard chi-square gate, covariance intersection), extended
+error metrics with confidence intervals and paired tests, a sensitivity analysis of the assumed parameters,
+a modality-dropout sweep, scene-density and node-layout runs, and failure examples. See `docs/REVISION.md`;
+outputs are in `results/revision/`.
