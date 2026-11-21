@@ -1,0 +1,10 @@
+setting,EARLY,LATE,LEARN_noDrop,LEARN_ModDrop,kendall_tau,top
+calibrated (L3),0.696,0.675,0.591,0.798,1.0,LEARN_ModDrop
+intercept -0.5 logit,0.693,0.674,0.584,0.783,1.0,LEARN_ModDrop
+intercept +0.5 logit,0.698,0.676,0.603,0.799,1.0,LEARN_ModDrop
+intercept -1.0 logit,0.689,0.671,0.59,0.78,1.0,LEARN_ModDrop
+intercept +1.0 logit,0.699,0.676,0.602,0.806,1.0,LEARN_ModDrop
+slope x1.2 (faster decay),0.693,0.673,0.59,0.798,1.0,LEARN_ModDrop
+slope x0.8 (slower decay),0.699,0.678,0.592,0.802,1.0,LEARN_ModDrop
+slope x1.4 (faster decay),0.689,0.668,0.599,0.785,1.0,LEARN_ModDrop
+slope x0.7 (slower decay),0.699,0.678,0.596,0.8,1.0,LEARN_ModDrop

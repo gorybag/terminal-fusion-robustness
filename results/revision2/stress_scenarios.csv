@@ -1,0 +1,5 @@
+scenario,EARLY,LATE,CI,LEARN_noDrop,LEARN_ModDrop,gnss_dep_ModDrop,one_sensor_ModDrop,top,runner_up,ModDrop_minus_runner_up,diff_ci95,wilcoxon_p,ModDrop_first_in_every_seed,kendall_tau_4_structures
+standard,0.697,0.68,0.701,0.612,0.823,0.142,0.616,LEARN_ModDrop,CI,0.109,0.099-0.120,1.0501887534614503e-17,True,1.0
+all rain/fog,0.65,0.64,0.648,0.598,0.773,0.326,0.586,LEARN_ModDrop,EARLY,0.108,0.098-0.118,6.702409068617996e-18,True,1.0
+node outage 20%,0.694,0.678,0.698,0.611,0.815,0.165,0.607,LEARN_ModDrop,CI,0.105,0.095-0.116,1.4573676877736123e-17,True,1.0
+compound,0.611,0.594,0.604,0.561,0.723,0.332,0.547,LEARN_ModDrop,EARLY,0.099,0.090-0.109,5.767203615817138e-18,True,1.0

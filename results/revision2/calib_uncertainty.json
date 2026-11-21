@@ -1,0 +1,134 @@
+[
+  {
+    "sensor": "lidar",
+    "group": "vehicle",
+    "n": 6141,
+    "scenes": 7,
+    "a": 3.4321,
+    "b": -0.06445,
+    "p30": 0.817,
+    "a_ci_annotation": [
+      3.273,
+      3.6197
+    ],
+    "b_ci_annotation": [
+      -0.0691,
+      -0.0598
+    ],
+    "p30_ci_annotation": [
+      0.8065,
+      0.8278
+    ],
+    "a_ci_scene": [
+      2.7078,
+      4.8595
+    ],
+    "b_ci_scene": [
+      -0.0863,
+      -0.0502
+    ],
+    "p30_ci_scene": [
+      0.7666,
+      0.8989
+    ]
+  },
+  {
+    "sensor": "lidar",
+    "group": "pedestrian",
+    "n": 3299,
+    "scenes": 7,
+    "a": 3.5728,
+    "b": -0.05994,
+    "p30": 0.855,
+    "a_ci_annotation": [
+      3.3363,
+      3.8
+    ],
+    "b_ci_annotation": [
+      -0.0668,
+      -0.0529
+    ],
+    "p30_ci_annotation": [
+      0.8429,
+      0.8662
+    ],
+    "a_ci_scene": [
+      2.7725,
+      4.8549
+    ],
+    "b_ci_scene": [
+      -0.0915,
+      -0.0422
+    ],
+    "p30_ci_scene": [
+      0.8042,
+      0.92
+    ]
+  },
+  {
+    "sensor": "camera_vis40",
+    "group": "vehicle",
+    "n": 6141,
+    "scenes": 7,
+    "a": 1.6965,
+    "b": -0.03375,
+    "p30": 0.665,
+    "a_ci_annotation": [
+      1.5788,
+      1.8239
+    ],
+    "b_ci_annotation": [
+      -0.0376,
+      -0.0302
+    ],
+    "p30_ci_annotation": [
+      0.6526,
+      0.6774
+    ],
+    "a_ci_scene": [
+      1.3379,
+      2.5268
+    ],
+    "b_ci_scene": [
+      -0.0475,
+      -0.0187
+    ],
+    "p30_ci_scene": [
+      0.5991,
+      0.8016
+    ]
+  },
+  {
+    "sensor": "camera_vis40",
+    "group": "pedestrian",
+    "n": 3299,
+    "scenes": 7,
+    "a": 1.6764,
+    "b": -0.02702,
+    "p30": 0.704,
+    "a_ci_annotation": [
+      1.5208,
+      1.8372
+    ],
+    "b_ci_annotation": [
+      -0.0323,
+      -0.0215
+    ],
+    "p30_ci_annotation": [
+      0.6874,
+      0.7193
+    ],
+    "a_ci_scene": [
+      0.9884,
+      2.5277
+    ],
+    "b_ci_scene": [
+      -0.0541,
+      -0.0145
+    ],
+    "p30_ci_scene": [
+      0.6262,
+      0.7878
+    ]
+  }
+]

@@ -13,3 +13,8 @@ Filled by `tools/collect_results.py` from a local run (see that script). Folder 
 | `figures/` | Final figures of the paper |
 | `MANIFEST.csv` | Source path, size and SHA-256 of every copied file |
 | `revision/` | Revision analyses (robust baselines, sensitivity, dropout sweep, CIs, density and node layouts, failure examples); see `docs/REVISION.md` |
+| `revision2/` | Second-round revision analyses (ranking per seed, tuned baselines, stress scenarios, layout variation, calibration uncertainty); see `docs/REVISION2.md` |
+
+Second revision of the manuscript: the new Table 6 (error metrics of all methods) is taken from
+`revision/core_summary.json`; the former Tables 6 and 7 are Tables 7 and 8; the former Figs. 6 and 7 are the two
+panels of Fig. 6; Fig. 3 uses `figures/Fig3_evaluation_setting_combined.png` (`tools/fig3_combined.py`).

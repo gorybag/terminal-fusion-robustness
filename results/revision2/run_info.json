@@ -1,0 +1,21 @@
+{
+  "script": "p1_bench/revision2_experiments.py",
+  "part": "all",
+  "out": "results/revision2",
+  "seeds": "7,11,23,31,47",
+  "sens_seeds": "7,11,23",
+  "n_train": 30,
+  "n_test": 20,
+  "n_train_s": 20,
+  "n_test_s": 15,
+  "n_tune": 30,
+  "T": 50.0,
+  "profile": "port_terminal",
+  "calib": "calibration/calib_L3.json",
+  "nusc_version": "v1.0-mini",
+  "python": "3.13.18",
+  "numpy": "2.5.3",
+  "scikit_learn": "1.9.1",
+  "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+  "note": "The standard setting reproduces results/revision/core_methods.csv (five-seed means and SDs identical to four decimals)."
+}

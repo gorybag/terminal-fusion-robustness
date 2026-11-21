@@ -1,0 +1,71 @@
+{
+  "EARLY": {
+    "default_mean": 0.6967,
+    "tuned_mean": 0.6986,
+    "tuned_sd": 0.0111,
+    "gain": 0.0018,
+    "ModDrop_minus_tuned_episode_mean": 0.1121,
+    "ModDrop_minus_tuned_ci95": [
+      0.1014,
+      0.1226
+    ],
+    "ModDrop_better_in_every_seed": true
+  },
+  "LATE": {
+    "default_mean": 0.68,
+    "tuned_mean": 0.6883,
+    "tuned_sd": 0.0098,
+    "gain": 0.0083,
+    "ModDrop_minus_tuned_episode_mean": 0.1217,
+    "ModDrop_minus_tuned_ci95": [
+      0.1101,
+      0.1325
+    ],
+    "ModDrop_better_in_every_seed": true
+  },
+  "CI": {
+    "default_mean": 0.7013,
+    "tuned_mean": 0.7084,
+    "tuned_sd": 0.0123,
+    "gain": 0.0071,
+    "ModDrop_minus_tuned_episode_mean": 0.1035,
+    "ModDrop_minus_tuned_ci95": [
+      0.0934,
+      0.1137
+    ],
+    "ModDrop_better_in_every_seed": true
+  },
+  "LEARN_ModDrop": {
+    "default_mean": 0.8227
+  },
+  "holm_p_ModDrop_vs_tuned": {
+    "LATE_tuned": 2.0720016826218035e-17,
+    "EARLY_tuned": 2.0720016826218035e-17,
+    "CI_tuned": 2.0720016826218035e-17
+  },
+  "grid": {
+    "q_scale": [
+      0.0625,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "chi2": [
+      5.9915,
+      9.2103,
+      13.8155,
+      18.4207
+    ],
+    "timeout_s": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "tuning_episodes": 30,
+    "note": "baselines tuned on training episodes; learned-fusion hyperparameters fixed in advance (not tuned)"
+  }
+}

@@ -67,3 +67,10 @@ See `CITATION.cff`. Please cite the paper when using this code.
 error metrics with confidence intervals and paired tests, a sensitivity analysis of the assumed parameters,
 a modality-dropout sweep, scene-density and node-layout runs, and failure examples. See `docs/REVISION.md`;
 outputs are in `results/revision/`.
+
+## Second-round revision analyses (v1.2.0)
+
+`p1_bench/revision2_experiments.py` adds the ranking in each seed, baselines tuned on the training episodes,
+harder scenarios (rain/fog in every episode, correlated node outage, compound), node-position and stack-density
+variations, and the uncertainty and perturbation of the calibrated detection curves. See `docs/REVISION2.md`;
+outputs are in `results/revision2/`.

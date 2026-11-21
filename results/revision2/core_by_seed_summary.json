@@ -1,0 +1,74 @@
+{
+  "seeds": [
+    7,
+    11,
+    23,
+    31,
+    47
+  ],
+  "six_method_order_identical_in_all_seeds": true,
+  "four_structure_order_identical_in_all_seeds": true,
+  "ModDrop_first_in_all_seeds": true,
+  "methods": {
+    "EARLY": {
+      "seed_mean": 0.6967,
+      "seed_sd": 0.0107,
+      "episode_mean": 0.6851,
+      "episode_ci95": [
+        0.6758,
+        0.6934
+      ],
+      "n_episodes": 100
+    },
+    "EARLY_HARD": {
+      "seed_mean": 0.4482,
+      "seed_sd": 0.0172,
+      "episode_mean": 0.4456,
+      "episode_ci95": [
+        0.427,
+        0.4642
+      ],
+      "n_episodes": 100
+    },
+    "LATE": {
+      "seed_mean": 0.68,
+      "seed_sd": 0.0096,
+      "episode_mean": 0.6692,
+      "episode_ci95": [
+        0.6611,
+        0.6769
+      ],
+      "n_episodes": 100
+    },
+    "CI": {
+      "seed_mean": 0.7013,
+      "seed_sd": 0.0126,
+      "episode_mean": 0.6889,
+      "episode_ci95": [
+        0.6796,
+        0.6973
+      ],
+      "n_episodes": 100
+    },
+    "LEARN_noDrop": {
+      "seed_mean": 0.6118,
+      "seed_sd": 0.014,
+      "episode_mean": 0.6033,
+      "episode_ci95": [
+        0.5952,
+        0.611
+      ],
+      "n_episodes": 100
+    },
+    "LEARN_ModDrop": {
+      "seed_mean": 0.8227,
+      "seed_sd": 0.0108,
+      "episode_mean": 0.7984,
+      "episode_ci95": [
+        0.784,
+        0.8108
+      ],
+      "n_episodes": 100
+    }
+  }
+}
